@@ -1,0 +1,29 @@
+[project]
+name = "nivasops-backend"
+version = "0.1.0"
+description = "Multi-tenant helpdesk and facility-operations platform for residential societies"
+authors = [{ name = "Susham Nandi", email = "sushamnandi2468@gmail.com" }]
+license = { text = "AGPL-3.0-or-later" }
+readme = "../README.md"
+requires-python = ">=3.13"
+classifiers = [
+    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+    "Framework :: Django :: 5.2",
+    "Programming Language :: Python :: 3.13",
+]
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "config.settings_test"
+python_files = ["test_*.py", "*_test.py"]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py313"
+line-length = 120
+extend-exclude = ["**/migrations/*.py"]
+
+[tool.ruff.lint]
+select = ["E9", "F63", "F7", "F82"]
+
+[tool.ruff.format]
+quote-style = "double"

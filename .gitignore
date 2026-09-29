@@ -1,0 +1,43 @@
+.env
+.env*.local
+.venv/
+**/.venv/
+*.py[cod]
+__pycache__/
+**/.pytest_cache/
+**/.ruff_cache/
+htmlcov/
+.coverage
+
+backend/staticfiles/
+backend/media/
+
+frontend/.next/
+frontend/node_modules/
+frontend/out/
+frontend/.env*.local
+**/node_modules/
+**/.next/
+*.tsbuildinfo
+
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+
+# Private reference and internal documentation
+.private_reference/
+.private/
+private/
+
+# Security and secrets
+*.pem
+*.key
+*.cert
+*.pfx
+*.p12
+
+# Local scratch and test outputs
+test_render.html
+backend/test_edge.pdf
